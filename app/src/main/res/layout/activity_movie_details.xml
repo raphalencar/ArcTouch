@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.rba.arctouch.MovieDetailsActivity">
+
+    <ProgressBar
+        android:id="@+id/progressbarDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/movie_details_poster_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/movie_details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_details_poster_path"
+                android:layout_marginTop="10dp"
+                android:lines="2"
+                android:text="@string/title"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/movie_details_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_details_title"
+                android:layout_marginTop="10dp"
+                android:text="@string/release_date" />
+
+            <TextView
+                android:id="@+id/movie_details_genres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_details_release_date"
+                android:layout_marginTop="10dp"
+                android:text="@string/genres" />
+
+            <TextView
+                android:id="@+id/movie_details_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_details_genres"
+                android:layout_marginTop="10dp"
+                android:text="@string/overview" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

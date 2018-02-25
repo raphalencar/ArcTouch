@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ArcTouch</string>
+
+    <!--Movie-->
+    <string name="genres">genres</string>
+    <string name="title">Title</string>
+    <string name="release_date">release date</string>
+    <string name="overview">overview</string>
+
+    <!--Snackbar-->
+    <string name="no_connection">Verifique sua conexão.</string>
+    <string name="search">Search movie by title</string>
+</resources>
